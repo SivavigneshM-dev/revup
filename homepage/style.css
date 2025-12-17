@@ -1,0 +1,27 @@
+:root {
+  --primary: #4F46E5;
+  --blue: #0EA5E9;
+  --cyan: #22D3EE;
+  --dark: #161819;
+  --purple: #A78BFA;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  background-color: var(--cyan);
+  display: flex;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+.search input{
+    width: 250px;
+    height: 25px;
+}

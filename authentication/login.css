@@ -1,4 +1,4 @@
-/* Allowed Colors ONLY */
+
 :root {
   --primary: #4F46E5;
   --blue: #0EA5E9;
@@ -7,14 +7,13 @@
   --purple: #A78BFA;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+
 body {
   height: 100vh;
   background-color: var(--dark);
@@ -24,7 +23,7 @@ body {
   font-family: 'Inter', 'Poppins', sans-serif;
 }
 
-/* Login Box */
+
 .login-box {
   width: 100%;
   max-width: 360px;
@@ -35,14 +34,13 @@ body {
   text-align: center;
 }
 
-/* Title */
 .login-box h2 {
   color: var(--cyan);
   margin-bottom: 24px;
   font-weight: 600;
 }
 
-/* Inputs */
+
 .login-box input {
   width: 100%;
   padding: 12px;
@@ -59,7 +57,7 @@ body {
   color: var(--purple);
 }
 
-/* Button */
+
 .login-box button {
   width: 100%;
   padding: 12px;
@@ -76,7 +74,7 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
-/* Forgot Password */
+
 .forgot {
   display: block;
   margin-top: 16px;
@@ -85,7 +83,7 @@ body {
   text-decoration: none;
 }
 
-/* Signup */
+
 .signup {
   margin-top: 18px;
   font-size: 14px;
@@ -99,12 +97,12 @@ body {
 }
 
 .logo-circle {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 16px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #4F46E5; 
+  border: 1px solid #4F46E5; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +115,7 @@ body {
   object-fit: cover;
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   .login-box {
     margin: 0 16px;
