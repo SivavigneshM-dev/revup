@@ -1,0 +1,22 @@
+:root {
+  --primary: #4F46E5;
+  --cyan: #22D3EE;
+  --dark: #161819;
+  --danger: #EF4444;
+  --blue: #0EA5E9;
+  --purple: #A78BFA;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--cyan);
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+

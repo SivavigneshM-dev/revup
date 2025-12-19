@@ -1,0 +1,160 @@
+:root {
+  --primary: #4F46E5;
+  --cyan: #22D3EE;
+  --dark: #161819;
+  --danger: #EF4444;
+  --blue: #0EA5E9;
+  --purple: #A78BFA;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--cyan);
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 18px;
+  background-color: #01373f;
+  color: #22D3EE;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #022c33;
+}
+
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding: 100px 60px 60px;
+}
+
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #05005a;
+  margin-bottom: 30px;
+}
+
+
+.primary-btn,
+.danger-btn {
+  width: 200px;
+  height: 55px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.danger-btn {
+  background-color: var(--danger);
+  color: #fff;
+}
+
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.info-card {
+  display: flex;
+  height: 120px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.info-card.large {
+  height: 280px;
+}
+
+ul.follower {
+  list-style: none;
+  display: flex;          
+  gap: 40px;              
+  padding: 0;
+  margin: 50px;
+}
+
+ul.follower li {
+  font-weight: 600;
+  color: var(--dark);
+  text-shadow: 2px  1px 4px  #105b7d;
+}
+
+ul.left {
+  float: left;
+  width: 40%;
+
+}
+ul.left {
+  list-style: none;      
+  padding: 0;            
+  margin-left: 20px;
+  margin-top:60px;
+  width: 40%;
+}
+
+ul.left li {
+  list-style: none;      
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.right {
+    margin-top: 30px;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Certificate image */
+.right img {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;       /* 🔥 important */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

@@ -17,11 +17,237 @@
 body {
   height: 100vh;
   background-color: var(--cyan);
-  display: flex;
   font-family: 'Inter', 'Poppins', sans-serif;
 }
 
-.search input{
-    width: 250px;
-    height: 25px;
+.top-nav{
+    width: 100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px;
+    margin-top: 20px;
+    position: relative;
 }
+
+.search-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.search input{
+    font-size:large;
+    display: flex;
+    text-align: justify;
+    width: 500px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid #4F46E5;
+    border-radius: 40px;
+}
+
+.avatar {
+    margin: 30px;
+    width: 60px;
+    height:60px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;         
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.avatar img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+
+.dropdown {
+    position: relative;
+    top: 0;
+    right: 30px;
+}
+
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+/* Dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #ffffff;
+    min-width: 170px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.dropdown-content a:hover {
+    background-color: #e0f2fe;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.tag-list{
+    margin-top: 70px;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.inner {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: spinY 60s linear infinite;
+}
+
+
+.inner:hover {
+    animation-play-state: paused;
+}
+
+.inner,
+.tag {
+    will-change: transform;
+}
+
+
+.tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.6rem;
+    font-size: 1.1rem;
+    background: var(--purple);
+    border-radius: 1.4rem;
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.25);
+}
+
+.tag a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+
+.tag:nth-child(1) {
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+}
+.tag:nth-child(2) {
+    transform: translate(-50%, -50%) rotateY(72deg) translateZ(300px);
+}
+.tag:nth-child(3) {
+    transform: translate(-50%, -50%) rotateY(144deg) translateZ(300px);
+}
+.tag:nth-child(4) {
+    transform: translate(-50%, -50%) rotateY(216deg) translateZ(300px);
+}
+.tag:nth-child(5) {
+    transform: translate(-50%, -50%) rotateY(288deg) translateZ(300px);
+}
+
+.tag span {
+    font-size: 1.2rem;
+    color:#64748b;
+}
+
+.fade {
+    position: absolute;
+    background: linear-gradient(90deg , #1e293b ,transparent 30% , transparent 70% #1e293b);
+    inset: 0;
+    pointer-events:none;
+
+}
+.dropbtn { 
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+@keyframes spinY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .inner {
+        width: 280px;
+        height: 180px;
+    }
+    .tag {
+        font-size: 0.95rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+
