@@ -65,7 +65,8 @@ body {
   color: #22D3EE;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 900;
+  font-size: x-large;
   transition: background 0.3s ease;
 }
 
@@ -97,7 +98,7 @@ body {
 
 .profile-image img {
   width: 240px;
-  height: 240px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 6px solid var(--primary);
