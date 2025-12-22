@@ -12,11 +12,25 @@
 
     <section class="explore-page">
         <header class="explore-header">
-            <div class="back-btn"><a href="../homepage/index.html" class="back-btn">⬅️Back</a></div>
-            <button class="filter-btn">☰ Filters</button>
+            <div class="back">
+                <a href="../homepage/index.html">
+                    <img src="../image/icon,png/lessthanicon.png" alt="Back">
+                </a>
+            </div>
+            <button class="filter-btn" id="filterToggle">☰ Filters</button>
+            <div class="filter-dropdown" id="filterDropdown">
+                <ul>
+                    <li>Trending</li>
+                    <li>Skills</li>
+                    <li>Technology</li>
+                    <li>Entertainment</li>
+                    <li>Career</li>
+                    <li>Knowledge</li>
+                </ul>
+            </div>
+
             <div class="search-box">
-                <input type="text" placeholder="Explore ....">
-                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Explore ...">
             </div>
         </header>
         <h1 class="explore-title">Select your Hobbies</h1>
@@ -57,6 +71,24 @@
             <p>© 2025 REVUP. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+    const filterToggle = document.getElementById("filterToggle");
+    const filterDropdown = document.getElementById("filterDropdown");
+
+    filterToggle.addEventListener("click", () => {
+        filterDropdown.style.display =
+            filterDropdown.style.display === "block" ? "none" : "block";
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+        if (!filterToggle.contains(e.target) && !filterDropdown.contains(e.target)) {
+            filterDropdown.style.display = "none";
+        }
+    });
+</script>
+
 </body>
 
 </html>

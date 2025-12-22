@@ -48,24 +48,31 @@
   box-sizing: border-box;
 }
 
-.back-btn a{
-    text-decoration:none;
-    font-weight: 700;
-    background-color: #161819;
-    color: #22D3EE;
-    padding: 10px ;
-    margin-right: 200px;
-    border-radius: 10px;
+h1{
+  color:var(--cyan-300);
+  padding:25px;
+  margin: auto;
+
+}
+.back img{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  padding: 10px;
+  background-color: #22D3EE;
+  border-radius:50%;
 }
 
-.back-btn a:hover{
-    background-color: #22D3EE;
-    color:#161819 ;
+.back img:hover{
+  background-color:#94f1ff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 body {
   min-height: 100vh;
-  background:linear-gradient(180deg, var(--primary-900) ,var(--dar) );
+  background:linear-gradient(180deg, var(--primary-900) ,var(--dark-800) );
   color: var(--gray-100);
   font-family: 'Inter', 'Poppins', sans-serif;
 }
@@ -74,6 +81,7 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 40px 24px;
+  margin: 50px  20px;
 }
 
 .challenge-grid {
@@ -83,6 +91,10 @@ body {
 }
 
 .challenge-card {
+  margin: auto  ;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
   background: rgba(255,255,255,0.08);
   padding: 24px;
   border-radius: 20px;
@@ -91,11 +103,11 @@ body {
 
 .challenge-card h3 {
   color: var(--primary-300);
-  margin-bottom: 10px;
+  margin: 20px;
 }
 
 .challenge-card button {
-  margin-top: 14px;
+  margin-top: 24px;
   background: var(--primary-500);
   border: none;
   padding: 10px 20px;

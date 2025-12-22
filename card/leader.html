@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leaderboard</title>
   <link rel="stylesheet" href="leader.css">
 </head>
+
 <body>
 
-<section class="leaderboard-page">
+  <section class="leaderboard-page">
 
-  <!-- HEADER -->
-  <header class="leaderboard-header">
-    <a href="javascript:history.back()" class="back-btn">⬅️Back</a>
-    <h1>Leaderboard</h1>
-  </header>
+    <!-- HEADER -->
+    <header class="leaderboard-header">
+      <div class="back">
+        <a href="../homepage/index.html">
+          <img src="../image/icon,png/lessthanicon.png" alt="Back">
+        </a>
+      </div>
+      <h1>Leaderboard</h1>
+    </header>
 
-  <!-- USER CARD -->
-  <div class="user-rank-card">
-    <div class="avatar">👤</div>
-    <div>
-      <h2>User Name</h2>
-      <p>Your Current Rank</p>
-    </div>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="leaderboard-layout">
-
-    <!-- LEFT : RANK LIST -->
-    <div class="rank-list">
-      <div class="rank-item gold">
-        <span class="rank">🥇</span>
-        <span class="name">User name #1</span>
-        <span class="score">300K</span>
-      </div>
-      <div class="rank-item silver">
-        <span class="rank">🥈</span>
-        <span class="name">User name #2</span>
-        <span class="score">280K</span>
-      </div>
-      <div class="rank-item bronze">
-        <span class="rank">🥉</span>
-        <span class="name">User name #3</span>
-        <span class="score">260K</span>
-      </div>
-      <div class="rank-item">
-        <span class="rank">#4</span>
-        <span class="name">User name #4</span>
-        <span class="score">240K</span>
-      </div>
-      <div class="rank-item">
-        <span class="rank">#5</span>
-        <span class="name">User name #5</span>
-        <span class="score">220K</span>
+    <!-- USER CARD -->
+    <div class="user-rank-card">
+      <div class="avatar">👤</div>
+      <div>
+        <h2>User Name</h2>
+        <p>Your Current Rank</p>
       </div>
     </div>
-    <div class="leaderboard-filters">
-      <h3>View By</h3>
-      <button class="filter-btn active">🌍 Global Level</button>
-      <button class="filter-btn">📍 Regional Level</button>
-      <button class="filter-btn">👥 Friends Level</button>
 
-      <div class="divider"></div>
+    <!-- MAIN CONTENT -->
+    <div class="leaderboard-layout">
 
-      <button class="filter-btn small">By Skills</button>
-      <button class="filter-btn small">By Reach</button>
-      <button class="filter-btn small">By Level</button>
+      <!-- LEFT : RANK LIST -->
+      <div class="rank-list">
+        <div class="rank-item gold">
+          <span class="rank">🥇</span>
+          <span class="name">User name #1</span>
+          <span class="score">300K</span>
+        </div>
+        <div class="rank-item silver">
+          <span class="rank">🥈</span>
+          <span class="name">User name #2</span>
+          <span class="score">280K</span>
+        </div>
+        <div class="rank-item bronze">
+          <span class="rank">🥉</span>
+          <span class="name">User name #3</span>
+          <span class="score">260K</span>
+        </div>
+        <div class="rank-item">
+          <span class="rank">#4</span>
+          <span class="name">User name #4</span>
+          <span class="score">240K</span>
+        </div>
+        <div class="rank-item">
+          <span class="rank">#5</span>
+          <span class="name">User name #5</span>
+          <span class="score">220K</span>
+        </div>
+      </div>
+      <div class="leaderboard-filters">
+        <h3>View By</h3>
+        <button class="filter-btn active">🌍 Global Level</button>
+        <button class="filter-btn">📍 Regional Level</button>
+        <button class="filter-btn">👥 Friends Level</button>
+
+        <div class="divider"></div>
+
+        <button class="filter-btn small">By Skills</button>
+        <button class="filter-btn small">By Reach</button>
+        <button class="filter-btn small">By Level</button>
+      </div>
+
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 </body>
+
 </html>

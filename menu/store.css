@@ -71,18 +71,20 @@ body {
   margin-bottom: 40px;
 }
 
-.back a{
-    text-decoration:none;
-    font-weight: 700;
-    background-color: #22D3EE;
-    color:#161819 ;
-    padding: 10px ;
-    border-radius: 10px;
+.back img{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  padding: 10px;
+  background-color: #22D3EE;
+  border-radius:50%;
 }
 
-.back a:hover{
-    background-color: #161819;
-    color: #22D3EE;
+.back img:hover{
+  background-color:#94f1ff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 .store-header h1 {
@@ -132,9 +134,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.store-card:hover {
-  transform: translateY(-6px);
-}
 
 .store-card h3 {
   font-size: 1.4rem;
@@ -155,6 +154,9 @@ body {
   cursor: pointer;
 }
 
+.store-card button:hover {
+  box-shadow: 0  0  16px var(--dark-700);
+}
 /* VARIANTS */
 .store-card.primary h3 {
   color: var(--primary-300);
@@ -164,12 +166,20 @@ body {
   color: white;
 }
 
+.store-card.primary button:hover {
+  box-shadow: 0  0  16px var(--primary-700);
+}
+
+
 .store-card.accent h3 {
   color: var(--cyan-300);
 }
 .store-card.accent button {
   background: var(--cyan-500);
   color: var(--dark-900);
+}
+.store-card.accent button:hover{
+  box-shadow: 0  0  16px var(--cyan-600); 
 }
 
 .store-card.premium h3 {
@@ -182,6 +192,11 @@ body {
     var(--primary-500)
   );
   color: white;
+}
+
+
+.store-card.premium button:hover{
+  box-shadow: 0  0  15px  var(--primary-700);
 }
 
 /* RIGHT */
