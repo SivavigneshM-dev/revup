@@ -1,45 +1,19 @@
 :root {
-  /* BRAND PRIMARY (INDIGO)*/
   --primary-900: #1E1B4B;
   --primary-700: #3730A3;
   --primary-600: #4338CA;
-  --primary-500: #4F46E5; /* MAIN */
+  --primary-500: #4F46E5; 
   --primary-400: #6366F1;
   --primary-300: #A5B4FC;
-  --primary-100: #EEF2FF;
-
-  /* SECONDARY BLUE*/
   --blue-700: #0369A1;
   --blue-600: #0284C7;
-  --blue-500: #0EA5E9; /* MAIN */
+  --blue-500: #0EA5E9;
   --blue-300: #7DD3FC;
   --blue-100: #E0F2FE;
-
-  /* CYAN ACCENT */
-  --cyan-600: #0891B2;
-  --cyan-500: #22D3EE; /* MAIN */
   --cyan-300: #67E8F9;
-  --cyan-100: #ECFEFF;
-
-  /* PURPLE (GAMIFICATION) */
-  --purple-700: #6D28D9;
-  --purple-500: #A78BFA; 
-  --purple-300: #C4B5FD;
-  --purple-100: #F5F3FF;
-
-  /* DARK / NEUTRALS*/
   --dark-900: #0F172A;
-  --dark-800: #161819; 
-  --dark-700: #1F2937;
-  --dark-600: #374151;
-  --gray-500: #6B7280;
-  --gray-300: #D1D5DB;
+  --dark-800: #161819;
   --gray-100: #F3F4F6;
-
-  --danger-600: #DC2626;
-  --danger-500: #EF4444;
-  --danger-300: #FCA5A5;
-  --danger-100: #FEE2E2;
 }
 
 * {
@@ -48,13 +22,20 @@
   box-sizing: border-box;
 }
 
-h1{
-  color:var(--cyan-300);
-  padding:25px;
-  margin: auto;
-
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--primary-900), var(--dark-800));
+  color: var(--gray-100);
+  font-family: 'Inter', 'Poppins', sans-serif;
 }
-.back img{
+
+h1 {
+  color: var(--cyan-300);
+  text-align: center;
+  padding: 25px 0;
+}
+
+.back img {
   width: 40px;
   height: 40px;
   position: fixed;
@@ -62,62 +43,94 @@ h1{
   left: 40px;
   padding: 10px;
   background-color: #22D3EE;
-  border-radius:50%;
+  border-radius: 50%;
+  transition: 0.3s ease;
 }
 
-.back img:hover{
-  background-color:#94f1ff;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-body {
-  min-height: 100vh;
-  background:linear-gradient(180deg, var(--primary-900) ,var(--dark-800) );
-  color: var(--gray-100);
-  font-family: 'Inter', 'Poppins', sans-serif;
+.back img:hover {
+  background-color: #94f1ff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
 .challenge-page {
   max-width: 1200px;
   margin: auto;
   padding: 40px 24px;
-  margin: 50px  20px;
 }
 
 .challenge-grid {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
+  justify-items: center;
 }
 
 .challenge-card {
-  margin: auto  ;
-  justify-content: center;
-  height: 300px;
-  width: 300px;
-  background: rgba(255,255,255,0.08);
-  padding: 24px;
+  width: 100%;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 28px 22px;
   border-radius: 20px;
   text-align: center;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.challenge-card img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 
 .challenge-card h3 {
   color: var(--primary-300);
-  margin: 20px;
+  margin: 20px 0 10px;
 }
 
-.challenge-card button {
+.challenge-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.challenge-card a {
+  display: block;
   margin-top: 24px;
   background: var(--primary-500);
-  border: none;
-  padding: 10px 20px;
+  padding: 12px;
   border-radius: 999px;
-  color: white;
+  color: var(--cyan-300);
   font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
+.challenge-card a:hover {
+  background: var(--primary-400);
+  transform: scale(1.04);
+}
 
-button a{
-  text-decoration: none;
-  color: #22D3EE;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .challenge-page {
+    padding: 20px 16px;
+  }
+
+  .back img {
+    width: 36px;
+    height: 36px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .challenge-page {
+    padding: 32px 20px;
+  }
 }
