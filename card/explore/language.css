@@ -1,0 +1,130 @@
+:root {
+  --primary-900: #1E1B4B;
+  --primary-700: #3730A3;
+  --primary-500: #4F46E5;
+  --cyan-500: #22D3EE;
+  --cyan-300: #67E8F9;
+  --dark-900: #0F172A;
+  --dark-700: #1F2937;
+  --gray-300: #D1D5DB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, var(--primary-700), var(--dark-900));
+  color: white;
+  min-height: 100vh;
+}
+
+
+.back img {
+  width: 42px;
+  height: 42px;
+  position: fixed;
+  top: 28px;
+  left: 24px;
+  padding: 10px;
+  background: linear-gradient(135deg, #22D3EE, #67E8F9);
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back img:hover {
+  background: #94f1ff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  transform: scale(1.08); 
+}
+
+
+.page-header {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  color: var(--cyan-500);
+}
+
+.page-header p {
+  margin-top: 10px;
+  color: var(--gray-300);
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.section-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.topic-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 30px 25px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: all 0.35s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 30px 70px rgba(34,211,238,0.35);
+}
+
+.topic-card h3 {
+  color: var(--cyan-300);
+  margin-bottom: 12px;
+}
+
+.topic-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--gray-300);
+}
+
+
+.tags {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--primary-500), var(--cyan-500));
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  .page-header h1 {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .back img {
+    top: 16px;
+    left: 16px;
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Quiz</title>
+  <link rel="stylesheet" href="knowledge.css" />
+</head>
+<body>
+
+  <!-- BACK BUTTON -->
+  <div class="back">
+    <a href="../challenge.html" aria-label="Go back">
+      <img src="./asset/image.png" alt="Back">
+    </a>
+  </div>
+
+  <!-- QUIZ CONTAINER -->
+  <section class="quiz-page">
+
+    <!-- HEADER -->
+    <header class="quiz-header">
+      <h1>Knowledge Quiz</h1>
+      <p>Test your understanding & earn XP</p>
+    </header>
+
+    <!-- PROGRESS -->
+    <div class="quiz-progress">
+      <span>Question 2 of 10</span>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- QUESTION CARD -->
+    <div class="quiz-card">
+      <h2>Which CSS property is used to create space between elements?</h2>
+
+      <!-- OPTIONS -->
+      <div class="options">
+        <label class="option">
+          <input type="radio" name="quiz">
+          <span>padding</span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="quiz">
+          <span>margin</span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="quiz">
+          <span>border</span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="quiz">
+          <span>outline</span>
+        </label>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="quiz-actions">
+        <button class="btn secondary">Previous</button>
+        <button class="btn primary">Next</button>
+      </div>
+    </div>
+
+    <!-- FEEDBACK (OPTIONAL STATE) -->
+    <div class="quiz-feedback correct">
+      ✔ Correct! +10 XP
+    </div>
+
+  </section>
+
+</body>
+</html>

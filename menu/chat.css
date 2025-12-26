@@ -149,7 +149,7 @@ body {
 .left-section ul li {
     margin: 5px 0;
     padding: 16px;
-    color: #D6D6D6;
+    color: #030403;
     background-color:#5E43AE;
     border-bottom: 2px solid #161819 ;
     border-radius: 10px;
@@ -260,7 +260,7 @@ li span.profile-round {
 }
 
 .chat-view{
-    padding: 15px 0;
+    padding: 30px 0;
     flex: 1;
     overflow-y: auto;
     width: 100%;
@@ -275,7 +275,7 @@ span.left-chat{
     display: flex;
     font-size: 18px;
     color: var(--dark-800);
-    background-color: #8a73ae;
+    background-color: #a78bfa;
     border-radius: 25px;
 }
 span.right-chat{
@@ -285,7 +285,7 @@ span.right-chat{
     display: flex;
     font-size: 18px;
     color: var(--dark-800);
-    background-color: #8a73ae;
+    background-color: #a66fff;
     border-radius: 25px;
 }
 .keyboard{

@@ -1,0 +1,157 @@
+/* ========== ROOT ========== */
+:root {
+  --primary-900: #1E1B4B;
+  --primary-700: #3730A3;
+  --primary-500: #4F46E5;
+  --cyan-500: #22D3EE;
+  --cyan-300: #67E8F9;
+  --dark-900: #0F172A;
+  --dark-700: #1F2937;
+  --gray-300: #D1D5DB;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #0f172a, #1e1b4b);
+  color: #fff;
+}
+
+/* BACK BUTTON (YOUR CODE) */
+.back img{
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  padding: 10px;
+  background-color: #22D3EE;
+  border-radius:50%;
+}
+
+.back img:hover{
+  background-color:#94f1ff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+
+/* PAGE */
+.challenge-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 24px 60px;
+}
+
+/* HEADER */
+.challenge-header h1 {
+  font-size: 36px;
+  color: #67E8F9;
+}
+
+.challenge-header p {
+  opacity: 0.85;
+}
+
+/* TODAY CARD */
+.today-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 30px;
+  margin: 40px 0;
+  backdrop-filter: blur(12px);
+}
+
+.task-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #22D3EE, #6366F1);
+  color: #000;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #67E8F9;
+  color: #67E8F9;
+}
+
+.btn.small {
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #a5b4fc, #22D3EE);
+
+}
+.btn.small:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #22D3EE;
+}
+
+.btn.glow {
+  background: linear-gradient(135deg, #a5b4fc, #22D3EE);
+  box-shadow: 0 0 20px rgba(34,211,238,0.6);
+}
+
+/* LEVELS */
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.level-card {
+  background: rgba(255,255,255,0.07);
+  border-radius: 22px;
+  padding: 25px;
+  text-align: center;
+}
+
+.level-card.completed {
+  border: 1px solid #22D3EE;
+}
+
+.level-card.active {
+  border: 1px solid #6366F1;
+}
+
+.level-card.locked {
+  opacity: 0.5;
+}
+
+.status {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--cyan-500);
+}
+
+/* ACHIEVEMENT */
+.achievement-card {
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 26px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.25), rgba(34,211,238,0.25));
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .challenge-header h1 {
+    font-size: 26px;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+}

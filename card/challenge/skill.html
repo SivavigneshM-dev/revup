@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Challenge</title>
+  <link rel="stylesheet" href="skill.css" />
+</head>
+<body>
+
+  <!-- BACK BUTTON -->
+  <div class="back">
+    <a href="../challenge.html" aria-label="Go back">
+      <img src="./asset/image.png" alt="Back">
+    </a>
+  </div>
+
+  <!-- PAGE WRAPPER -->
+  <section class="challenge-page">
+
+    <!-- HEADER -->
+    <header class="challenge-header">
+      <h1>Today's Skill Challenge</h1>
+      <p>Complete tasks, level up your skills, and unlock achievements</p>
+    </header>
+    <div class="today-card">
+      <h2>🔥 Today's Challenge</h2>
+      <p>Build a responsive card layout using Flexbox or Grid</p>
+
+      <div class="task-actions">
+        <button class="btn primary">Start Challenge</button>
+        <button class="btn secondary">Refresh Task</button>
+      </div>
+    </div>
+
+    <!-- LEVELS -->
+    <div class="levels-grid">
+
+      <!-- EASY -->
+      <div class="level-card completed">
+        <h3>Easy</h3>
+        <p>Create a simple responsive card</p>
+        <span class="status">✔ Completed</span>
+      </div>
+
+      <!-- MEDIUM -->
+      <div class="level-card active">
+        <h3>Medium</h3>
+        <p>Add hover effects & transitions</p>
+        <button class="btn small">Continue</button>
+      </div>
+
+      <!-- HARD -->
+      <div class="level-card locked">
+        <h3>Hard</h3>
+        <p>Animate cards on scroll</p>
+        <span class="status">🔒 Locked</span>
+      </div>
+
+    </div>
+
+    <!-- ACHIEVEMENT -->
+    <div class="achievement-card">
+      <h2>🏆 Higher Achievement</h2>
+      <p>Complete all levels to earn bonus XP & streak boost</p>
+      <button class="btn glow">Claim Reward</button>
+    </div>
+  </section>
+</body>
+</html>
