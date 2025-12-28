@@ -181,3 +181,47 @@ body {
     cursor: pointer;
     margin-right: 20px;
 }
+
+
+@media (max-width: 480px) {
+    body{
+        background: #1b1232;
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav{
+        width: 100%;
+    }
+    .avatar{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        left: 20px;
+        margin: 0;
+    }
+    .chat-view{
+        padding: 20px;
+    }
+
+    .search-wrapper{
+        width:40px;
+        margin: 0 40px;
+    }
+    .search input{
+        width: 100%;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-section{
+        width: 80%;
+        margin-left:80px; 
+    }
+    .right-section{
+        width: 80%;
+        margin-left: 50px;
+    }
+
+}

@@ -129,7 +129,7 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .challenge-page {
     padding: 32px 20px;
   }

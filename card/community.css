@@ -138,3 +138,8 @@ body {
   border-radius: 999px;
   font-weight: 600;
 }
+
+button a {
+  text-decoration: none;
+  color: #fffdfd;
+}
